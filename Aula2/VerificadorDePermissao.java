@@ -5,7 +5,7 @@ public class VerificadorDePermissao {
     public static void main(String[] args) {
         float altura = 1.45f;
         boolean estaAcompanhada = false;
-        if (altura >= 1.60 || estaAcompanhada == true){
+        if (altura >= 1.60 || estaAcompanhada){
             System.err.println("Pode entrar!");
         } else {
             System.err.println("Entrada negada!");

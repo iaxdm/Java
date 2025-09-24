@@ -3,7 +3,7 @@ if-else para classificar e exibir no console se a pessoa é "Criança", "Adolesc
 
 public class ClassificadorDeIdade {
     public static void main(String[] args) {
-        int idade = 65;
+        int idade = 5;
         if (idade <= 12){
             System.out.println("Criança");
         }else if (idade < 18){

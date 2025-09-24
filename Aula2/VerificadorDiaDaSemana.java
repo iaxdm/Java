@@ -3,14 +3,18 @@ switch-case para determinar se o número corresponde a um "Dia útil" (2 a 6) ou
 
 public class VerificadorDiaDaSemana {
     public static void main(String[] args) {
-        int diaDaSemana = 2;
+        int diaDaSemana = 8;
 
-        switch (diaDaSemana){
-        case 1, 7:
+        switch (diaDaSemana){ //Escolha
+        case 1, 7: 
             System.out.println("Fim de semana");
             break;
         case 2, 3, 4, 5, 6:
-        System.out.println("DiaDaSemana");
+            System.err.println("Dia útil");
+            break;
+        default:
+        System.out.println("Dia inválido");
+        break;
         } 
     }
 }
