@@ -1,0 +1,19 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+public class SituacaoAluno {
+   public SituacaoAluno() {
+   }
+
+   public static void main(String[] var0) {
+      float var1 = 8.7F;
+      float var2 = 6.3F;
+      float var3 = (var1 + var2) / 2.0F;
+      if (var3 >= 7.0F) {
+         System.out.println("Sua mÃ©dia foi: " + var3 + ". Aprovado");
+      } else if (var3 == 10.0F) {
+         System.out.println("Sua mÃ©dia foi: " + var3 + ". Aprovado, parabÃ©ns");
+      } else {
+         System.out.println("Sua mÃ©dia foi: " + var3 + ". Reprovado");
+      }
+
+   }
+}
