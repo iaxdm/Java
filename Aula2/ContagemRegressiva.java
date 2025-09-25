@@ -1,10 +1,14 @@
+/*4. Crie uma classe ContagemRegressiva. Declare uma variável inicio e atribua um valor (ex: 10). Use um
+laço while para imprimir a contagem regressiva de inicio até 1. */
+
 public class ContagemRegressiva {
     public static void main(String[] args) {
         int inicio = 10;
         int contagem;
 
         while (inicio > 0){
-            System.out.println(inicio --);
+            System.out.println(inicio);
+            inicio --;
         }
     }
 }
