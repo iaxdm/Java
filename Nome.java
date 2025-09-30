@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Nome {
     public static void main (String[] args){
         Scanner leia = new Scanner(System.in);
-        System.out.println("Digite o seu nome: ");
-        String nome = leia.nextLine();
-        System.out.println("Olá, " + nome + "!");
+        System.out.print("Digite o seu nome: ");
+        String nome = leia.Line();
+        System.out.print("Olá, " + nome + "!");
         leia.close();
     }
 }
