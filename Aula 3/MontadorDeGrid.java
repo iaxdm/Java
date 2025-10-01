@@ -22,5 +22,6 @@ public class MontadorDeGrid {
             }
             System.out.println();
         }
+        sc.close();
     }    
 }
