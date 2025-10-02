@@ -16,7 +16,7 @@ public class BoletimEscolar {
                 notas[i][j] = Double.parseDouble(JOptionPane.showInputDialog("Digite a "+(1+j)+"ª nota do aluno "+(1+i)));
                 soma = soma + notas[i][j];
             }
-        media[i] = soma/4; 
+        media[i] = soma/4;
         soma = 0;
         }
         JOptionPane.showInputDialog(null, String.format("Média do aluno 1: %.2f %n Média do aluno 2: %.2f %n Média do aluno 3: %.2f", media[0], media[1], media[2]));

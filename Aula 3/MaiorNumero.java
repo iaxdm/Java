@@ -4,7 +4,7 @@ os dados para encontrar a maior pontuação e, ao final, exiba o recorde encontr
 
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
+
 public class MaiorNumero {
     public static void main(String[] args) {
         int maior, posicao;
