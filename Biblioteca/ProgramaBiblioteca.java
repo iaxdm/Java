@@ -2,13 +2,9 @@ package Biblioteca;
 
 public class ProgramaBiblioteca {
     public static void main(String[] args) {
-        Autor machado = new Autor("Machado de Assis, brasileiro");
+        Autor robert = new Autor("Robert Cecil Martin", "EUA");
+        Livro codigoLimpo = new Livro("Código Limpo",2021, robert);
 
-        Livro DomCasmurro = new Livro();
-        DomCasmurro.titulo = "Dom Casmurro";
-        DomCasmurro.anoPublicacao = 1899;
-        DomCasmurro.autor = machado;
-
-        System.out.println("O livro "+DomCasmurro.titulo+" foi escrito por "+DomCasmurro.autor.nome);
+        System.out.printf("O livro '%s' foi escrito por %s", codigoLimpo.titulo, codigoLimpo.autor.nome);
     }
 }
