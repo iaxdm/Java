@@ -20,4 +20,4 @@ public class jogo {
         Flamengo.exibirEscalacao();
         sc.close();
     }
-}
+} 
