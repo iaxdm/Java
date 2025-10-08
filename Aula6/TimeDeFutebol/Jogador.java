@@ -1,4 +1,4 @@
-package Aula6;
+package TimeDeFutebol;
 
 public class Jogador { //Objeto jogador
     String nome, posicao;

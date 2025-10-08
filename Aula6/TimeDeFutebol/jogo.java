@@ -1,4 +1,4 @@
-package Aula6;
+package TimeDeFutebol;
 
 import java.util.Scanner;
 public class jogo {

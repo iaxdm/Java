@@ -1,4 +1,4 @@
-package Aula6;
+package TimeDeFutebol;
 
 public class TimeDeFutebol {
     String nomeDoTime;
