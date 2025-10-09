@@ -11,13 +11,14 @@ public class Escola {
     }
 
     public void matricular (Aluno novoAluno){
-        if (vagasOcupadas < alunosMatriculados.length){
-            alunosMatriculados [vagasOcupadas] = novoAluno;
-            vagasOcupadas++;
-            System.out.println("Matrícula de "+novoAluno.nome + " realizada! =)");
-        }
-        else{
-            System.out.println("Não há vagas disponíveis");
-        }
+        
+            if (vagasOcupadas < alunosMatriculados.length){
+                alunosMatriculados [vagasOcupadas] = novoAluno;
+                vagasOcupadas++;
+                System.out.println("Matrícula de "+novoAluno.nome + " realizada! =)");
+            }
+            else{
+                System.out.println("Não há vagas disponíveis");
+            }
     }
 }
