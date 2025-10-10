@@ -1,6 +1,6 @@
 package Aula7.SelectionSort;
 
-public class Ordenador {
+public class SelectionSort {
     public static void selectionSort(int[] vetor){
         int n = vetor.length;
         for(int i = 0; i<n-1; i++){
