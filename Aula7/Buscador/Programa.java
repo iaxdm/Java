@@ -2,14 +2,16 @@ package Aula7.Buscador;
 
 public class Programa {
     public static void main(String[] args) {
-        int [] vetor = {1, 2, 3, 4, 5, 6, 7};
-        int busca = 7;
+        int[] vetor = new int[3000];
+        for (int i = 0; i < vetor.length; i++) {
+            vetor[i] = i + 2;
+        }
+        int busca = 1344;
         int posicao = Buscador.buscaBinaria(vetor, busca);
-
         if(posicao == -1){
-            System.out.println("O número não está na lista");
+            System.out.println("O número não está na lista.");    
         }else{
-            System.out.printf("O item buscado está na posição: %d e é o item: %d", posicao, vetor[posicao]);
+            System.out.printf("O item buscado está na posição: %d e é o item: %d ", posicao, vetor[posicao]);
         }
     }
 }

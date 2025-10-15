@@ -22,10 +22,10 @@ public class Buscador {
                 return meio;
             }
 
-            if(vetor [meio] < busca){
-                inicio = meio + 1;
+            if(busca < vetor[meio]){
+                fim = meio - 1;
             } else {
-                fim = meio -1; 
+                inicio = meio + 1; 
             }
         }
         return -1;
