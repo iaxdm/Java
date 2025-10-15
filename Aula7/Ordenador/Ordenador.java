@@ -1,4 +1,4 @@
-package Aula7.Ordenador;
+package aula7.Ordenador;
 
 public class Ordenador {
     public static void bubbleSort(int[] vetor){
@@ -49,3 +49,4 @@ public class Ordenador {
         }
     }
 }
+

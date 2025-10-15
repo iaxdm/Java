@@ -1,4 +1,4 @@
-package Aula7.Ordenador;
+package aula7.Ordenador;
 
 import java.util.Random;
 
