@@ -11,7 +11,8 @@ public class GerenciadorDeEstoque {
         System.out.println("Seja bem vindo ao Sistema de Gerenciamento de Estoque"+"\n"+("-".repeat(55)));
         do{
         
-        System.out.println("1- Cadastrar produtos\n2- Buscar Produtos\n3- Listar Produtos\n4- Encerrar programa\n");
+        System.out.println("1- Cadastrar produtos\n2- Buscar Produtos\n3- Listar Produtos\n4- Encerrar programa");
+        System.out.println(("-".repeat(55)));
         escolha = sc.nextInt();
         sc.nextLine();
 
@@ -19,6 +20,7 @@ public class GerenciadorDeEstoque {
         long codigo;
         String nome, categoria;
         double preco;
+        int quantidadeEmEstoque;
 
             switch (escolha) {
                 case 1:
@@ -31,11 +33,16 @@ public class GerenciadorDeEstoque {
                         System.out.print("Digite o código do protudo: ");
                         codigo = sc.nextInt();
                         sc.nextLine();
+                        System.out.print("Quantidade em estoque: ");
+                        quantidadeEmEstoque = sc.nextInt();
+                        sc.nextLine();
                         System.out.print("Digite o preço do produto: R$");
                         preco = sc.nextDouble();
                         sc.nextLine();
                         System.out.println();
                         produtosCadastrados ++;
+
+                        
                     } else {
                         System.out.println("Limite de produtos cadastrados atingido");
                     }
@@ -53,8 +60,11 @@ public class GerenciadorDeEstoque {
                     break;
             
                 default:
+                    System.out.println("Opção inválida");
+                    System.out.println();
                     break;
             }
         } while (escolha !=4);
+        sc.close();
     }    
 }
