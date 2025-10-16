@@ -1,5 +1,3 @@
-package aula7.Ordenador;
-
 public class Ordenador {
     public static void bubbleSort(int[] vetor){
         int n = vetor.length;

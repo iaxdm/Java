@@ -1,4 +1,4 @@
-package aula7.BuscaObjeto;
+package Aula7.BuscaObjeto;
 
 public class Item {
     String nome;

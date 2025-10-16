@@ -1,5 +1,3 @@
-package aula7.Ordenador;
-
 import java.util.Random;
 
 public class Programa {

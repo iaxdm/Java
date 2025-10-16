@@ -1,4 +1,4 @@
-package aula7.Buscador;
+package Aula7.Buscador;
 
 public class Buscador {
     public static int buscaSequencial(int[] vetor, int busca){
