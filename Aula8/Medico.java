@@ -9,13 +9,14 @@ public class Medico{
         this.nome = nome;
         this.salario = salario;
         this.valorDaConsulta = valorDaConsulta;
+        totalMedicos += 1;
     }
 
-    public void pagamentoDinheiro(double valorDaConsulta){
-        salario += valorDaConsulta;
+    public void pagamentoDinheiro(){
+        this.salario += this.valorDaConsulta;
     }
-    public void pagamentoPlano(double valorDaConsulta){
-        salario += valorDaConsulta*0.7;
+    public void pagamentoPlano(){
+        this.salario += this.valorDaConsulta*0.8;
     }
    
     public long getCrm() {
@@ -40,12 +41,20 @@ public class Medico{
         return salario;
     }
     public void setSalario(double salario) {
+        if (salario > 0){
         this.salario = salario;
+        }else {
+            System.out.println("Salário não pode ser negativo");
+        }
     }
     public double getValorDaConsulta() {
         return valorDaConsulta;
     }
     public void setValorDaConsulta(double valorDaConsulta) {
+        if(valorDaConsulta > 0){
         this.valorDaConsulta = valorDaConsulta;
+        }else{
+            System.out.println("Valor da consulta não pode ser negativo");
+        }
     }
 }
