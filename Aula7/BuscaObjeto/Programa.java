@@ -32,6 +32,6 @@ public class Programa {
         }else {
             System.out.println("O item buscado é: " + encontrado.nome + " - " + encontrado.valor);
         }
-
+        sc.close();
     }
 }

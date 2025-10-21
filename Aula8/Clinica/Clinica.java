@@ -25,5 +25,6 @@ public class Clinica{
     System.out.println("Nome: "+medico2.getNome() + " | Salário: "+ medico2.getSalario());
     System.out.println("Nome: "+medico3.getNome() + " | Salário: "+ medico3.getSalario());
     System.out.println("Total de médicos cadastrados: " + Medico.getTotalMedicos());
+    sc.close();
     }
 }

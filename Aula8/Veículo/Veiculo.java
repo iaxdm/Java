@@ -11,8 +11,6 @@ Métodos
 
 package Veículo;
 
-import TimeDeFutebol.Jogador;
-
 public class Veiculo {
     String placa, tipo;
     Double valor;
@@ -22,7 +20,34 @@ public class Veiculo {
         this.tipo = tipo;
         this.valor = valor;
     }
-    public void ipva(Jogador calculoIPVA){
 
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public Double getValor() {
+        return valor;
+    }
+
+    public void setValor(Double valor) {
+        this.valor = valor;
+    }
+    public double ipvaFlex(){
+        return valor*0.04;
+    }
+    public double ipvaGas(){
+        return valor*0.015;
     }
 }
