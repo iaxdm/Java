@@ -41,7 +41,7 @@ public class GerenciadorDeEstoque {
                         sc.nextLine();
                         System.out.println();
                         produtosCadastrados ++;
-
+    
                         
                     } else {
                         System.out.println("Limite de produtos cadastrados atingido");

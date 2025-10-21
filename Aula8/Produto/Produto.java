@@ -29,16 +29,25 @@ public class Produto {
         return valor;
     }
     public void setValor(Double valor) {
-        this.valor = valor;
+        if(valor >0){
+            this.valor = valor;
+        }else{
+            System.out.println("Valor inválido!");
+        }
+        
     }
     public int getQuantidade() {
         return quantidade;
     }
     public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
+        if(quantidade >0){
+            this.quantidade = quantidade;
+        }else{
+            System.out.println("Quantidade inválida!");
+        }
     }
     public double calcularIcms(){
-        return valor*0.12;
+        return total()*0.12;
     }
     public double total(){
         return valor*quantidade ;
