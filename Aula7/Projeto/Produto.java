@@ -15,9 +15,4 @@ public class Produto {
     this.preco = preco;
     this.quantidadeEmEstoque = quantidadeEmEstoque;
     }
-    public void cadastrar (Produto novoProduto){
-        if(produtosCadastrados<produtos.length){
-
-        }
-    }
 }

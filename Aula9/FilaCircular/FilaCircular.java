@@ -1,23 +1,28 @@
-package Aula9.Fila;
+package Aula9.FilaCircular;
 import Aula9.Pessoa;
+import Aula9.Fila.Fila;
 
-public class Fila {
+public class FilaCircular {
     private Pessoa [] elementos;
-    private int tamanho;
+    private int inicio;
+    private int fim;
     private int capacidade;
+    private int tamanho;
 
-    public Fila(int capacidade){
-        this.capacidade = capacidade;
+    public FilaCircular(int capacidade){
         this.elementos = new Pessoa[capacidade];
+        this.capacidade = capacidade;
         this.tamanho = 0;
+        this.inicio = 0;
+        this.fim = -1;
     }
-
     public void enqueue(Pessoa elemento){
         if(tamanho == capacidade){
             System.out.println("A fila está cheia! Não foi possível adicionar a pessoa: "+ elemento.getNome());
             return;
         }
-        elementos[tamanho] = elemento;
+        fim = (fim + 1)%capacidade;
+        elementos[fim] = elemento;
         tamanho++;
         System.out.println("A pessoa: "+elemento.getNome() + " foi adicionada no final da fila!");
     }
@@ -26,14 +31,11 @@ public class Fila {
             System.out.println("A fila está vazia!");
             return null;
         }
-        Pessoa p = elementos[0];
-        //desloca todos para frente
-        for(int i=0; i< tamanho-1; i++){
-            elementos[i] = elementos[i+1];
-        }
-        elementos[tamanho - 1] = null;
+        Pessoa p = elementos [inicio];
+        elementos [inicio] = null;
+        inicio = (inicio + 1)%capacidade;
         tamanho--;
-        System.out.println("A pessoa " + p.getNome() + " foi removida do início da fila!");
+        System.out.println("A pessoa " + p.getNome() + " foi removida do inicio da fila!");
         return p;
     }
     public Pessoa front(){
@@ -41,12 +43,6 @@ public class Fila {
             System.out.println("A fila está vazia!");
             return null;
         }
-    return elementos [0];
-    }
-    public boolean isEmpty(){
-        return tamanho == 0;
-    }
-    public int tamanho(){
-        return tamanho;
+    return elementos [inicio];
     }
 }

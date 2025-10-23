@@ -16,7 +16,6 @@ public class GerenciadorDeEstoque {
         escolha = sc.nextInt();
         sc.nextLine();
 
-
         long codigo;
         String nome, categoria;
         double preco;
@@ -41,7 +40,7 @@ public class GerenciadorDeEstoque {
                         sc.nextLine();
                         System.out.println();
                         produtosCadastrados ++;
-    
+                        produtos[produtosCadastrados] = new Produto();
                         
                     } else {
                         System.out.println("Limite de produtos cadastrados atingido");

@@ -36,7 +36,7 @@ public class Pilha {
         Pessoa p = elementos[topo];
         elementos [topo] = null;
         topo--;
-        System.out.println("A pessoa "+p.getNome() + "foi removida do topo da piha!");
+        System.out.println("A pessoa "+p.getNome() + " foi removida do topo da piha!");
         return p;
     }
     public boolean isEmpty(){
