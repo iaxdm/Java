@@ -45,4 +45,10 @@ public class FilaCircular {
         }
     return elementos [inicio];
     }
+    public boolean isEmpty(){
+        return tamanho == 0;
+    }
+    public int tamanho(){
+        return tamanho;
+    }
 }

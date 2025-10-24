@@ -1,4 +1,6 @@
 package Aula9.Fila;
+import java.util.Arrays;
+
 import Aula9.Pessoa;
 
 public class Fila {
@@ -48,5 +50,10 @@ public class Fila {
     }
     public int tamanho(){
         return tamanho;
+    }
+
+    @Override
+    public String toString() {
+        return "" + Arrays.toString(elementos) + "";
     }
 }
