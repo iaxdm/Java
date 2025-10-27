@@ -5,7 +5,6 @@ public class Fila {
     public Pessoa [] elementos;
     private int tamanho;
     private int capacidade;
-    public int length;
 
     public Fila(int capacidade){
         this.capacidade = capacidade;
@@ -50,4 +49,9 @@ public class Fila {
     public int tamanho(){
         return tamanho;
     }
+    public void MostrarFila(){
+        for(int i = 0; i < tamanho; i++){
+            System.out.printf("%dº -%s;\n", i+1, elementos[i].getNome());
+        }
+}
 }

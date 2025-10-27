@@ -51,4 +51,9 @@ public class FilaCircular {
     public int tamanho(){
         return tamanho;
     }
+    public void MostrarFila(){
+            for(int i = 0; i < tamanho; i++){
+                System.out.printf("%dº -%s;\n", i+1, elementos[i].getNome());
+            }
+    }
 }

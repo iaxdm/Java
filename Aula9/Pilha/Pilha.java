@@ -45,4 +45,9 @@ public class Pilha {
     public int tamanho(){
         return topo + 1;
     }
+    public void MostrarFila(){
+        for(int i = topo; i >=0; i++){
+            System.out.printf("%dº -%s;\n", i+1, elementos[i].getNome());
+        }
+}
 }
