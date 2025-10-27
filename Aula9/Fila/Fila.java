@@ -2,9 +2,10 @@ package Aula9.Fila;
 import Aula9.Pessoa;
 
 public class Fila {
-    private Pessoa [] elementos;
+    public Pessoa [] elementos;
     private int tamanho;
     private int capacidade;
+    public int length;
 
     public Fila(int capacidade){
         this.capacidade = capacidade;
@@ -14,12 +15,12 @@ public class Fila {
 
     public void enqueue(Pessoa elemento){
         if(tamanho == capacidade){
-            System.out.println("A fila está cheia! Não foi possível adicionar a pessoa: "+ elemento.getNome());
+            System.out.println("A fila está cheia! Não foi possível adicionar "+ elemento.getNome());
             return;
         }
         elementos[tamanho] = elemento;
         tamanho++;
-        System.out.println("A pessoa: "+elemento.getNome() + " foi adicionada no final da fila!");
+        System.out.println(elemento.getNome() + " foi adicionada no final da fila Inicial!");
     }
     public Pessoa dequeue(){
         if(isEmpty()){
@@ -33,7 +34,7 @@ public class Fila {
         }
         elementos[tamanho - 1] = null;
         tamanho--;
-        System.out.println("A pessoa " + p.getNome() + " foi removida do início da fila!");
+        System.out.println(p.getNome() + " foi removido(a) do início da fila!");
         return p;
     }
     public Pessoa front(){
